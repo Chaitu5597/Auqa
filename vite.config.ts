@@ -5,7 +5,7 @@
 
   export default defineConfig({
     plugins: [react()],
-    base: "/WaterLinks_web/",
+    base: "/Auqu_web",
     
     resolve: {
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
