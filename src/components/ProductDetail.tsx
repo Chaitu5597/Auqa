@@ -230,15 +230,8 @@ export function ProductDetail({ productId, onBack }: ProductDetailProps) {
 
 
 
-
-
-
-
-
-
-
   const productsData: { [key: string]: any } = {
-     "aqua-green": {
+    "aqua-green": {
       name: "AQUA GREEN",
       tagline: "Soil Organic Carbon Enhancer",
       image: aquaGreenProductImage,
@@ -280,10 +273,10 @@ export function ProductDetail({ productId, onBack }: ProductDetailProps) {
         "Apply 1-2 kg per acre weekly. Increase to 2-3 kg during high stocking density periods.",
       composition: [
         { component: "Bacillus spp" },
-        { component: "Lactobacillus spp"},
+        { component: "Lactobacillus spp" },
         { component: "Enzyme producers" },
         { component: "TVC (Total Viable Count) : 15 billion cfu/gm" },
-       
+
       ],
     },
     maricidin: {
@@ -342,7 +335,7 @@ export function ProductDetail({ productId, onBack }: ProductDetailProps) {
         { component: "Botanical Extracts" },
         { component: "Beneficial Bacterial Strains" },
         { component: "Nano-emulsion" },
-      
+
       ],
       extraSection: {
         title: "Synergistic Action",
@@ -453,7 +446,7 @@ export function ProductDetail({ productId, onBack }: ProductDetailProps) {
       ],
       // dosage:
       //   "2 liters per acre once every 15 days 2 liters per acre every 5–7 days until bloom subsides",
-       additionalDosage: [
+      additionalDosage: [
         { des1: "2 liters per acre once every 15 days.", dat: "" },
         { des1: "2 liters per acre for every  5–7 days .", dat: "" }
       ],
@@ -493,8 +486,8 @@ export function ProductDetail({ productId, onBack }: ProductDetailProps) {
         "Prevents mineral deficiencies",
       ],
       // dosage:
-        // "Mix 500g-1kg per ton of feed. Apply 2-3 kg per acre in water during molting periods.",
-         additionalDosage: [
+      // "Mix 500g-1kg per ton of feed. Apply 2-3 kg per acre in water during molting periods.",
+      additionalDosage: [
         { des1: "Feed Supplementation", dat: "Mix 5-10 grams of CrustaMin Pro per 1kg of feed." },
         { des1: "Pond Application", dat: "Apply 6kg per acre." }
       ],
@@ -531,7 +524,7 @@ export function ProductDetail({ productId, onBack }: ProductDetailProps) {
       extraSection: {
         title: "Heavy Metal Chelation Technology",
         paragraphs: [
-"          Detoxify-X works through a natural bioremediation process that rejuvenates the pond bottom and improves overall water quality. After application, the beneficial microbes—Para coccus spp. and Purple Non-Sulfur Bacteria (PNSB)—rapidly colonize the pond bottom, where they begin decomposing accumulated organic matter such as uneaten feed, fecal waste, and dead plankton. This microbial activity breaks down sludge into simpler, harmless compounds while actively consuming sulfur and nitrogen sources that otherwise generate toxic gases like Hydrogen Sulfide (H₂S) and Ammonia (NH₃). As Detoxify-X neutralizes these harmful gases, it restores aerobic conditions and enhances dissolved oxygen at the pond bottom. The result is a cleaner, healthier aquatic environment that supports better shrimp and fish growth, improves feed conversion, and minimizes stress and mortality throughout the culture cycle."        ],
+          "          Detoxify-X works through a natural bioremediation process that rejuvenates the pond bottom and improves overall water quality. After application, the beneficial microbes—Para coccus spp. and Purple Non-Sulfur Bacteria (PNSB)—rapidly colonize the pond bottom, where they begin decomposing accumulated organic matter such as uneaten feed, fecal waste, and dead plankton. This microbial activity breaks down sludge into simpler, harmless compounds while actively consuming sulfur and nitrogen sources that otherwise generate toxic gases like Hydrogen Sulfide (H₂S) and Ammonia (NH₃). As Detoxify-X neutralizes these harmful gases, it restores aerobic conditions and enhances dissolved oxygen at the pond bottom. The result is a cleaner, healthier aquatic environment that supports better shrimp and fish growth, improves feed conversion, and minimizes stress and mortality throughout the culture cycle."],
         highlight: {
           title: "Proven Results",
           description:
@@ -620,47 +613,47 @@ export function ProductDetail({ productId, onBack }: ProductDetailProps) {
           </div> */}
 
           <div className="md:sticky md:top-0 self-start">
-  {productId === "aqua-green" ? (
-    <div className="relative rounded-lg p-8 overflow-visible">
-      <img
-        src={product.image}
-        alt={product.name}
-        className="w-3/4 mx-auto h-auto object-contain animate-float-uneven relative"
-        style={{ top: "-10px" }}
-      />
-    </div>
-  ) : productId === "impetus" ||
-    productId === "maricidin" ||
-    productId === "sporex" ||
-    productId === "vibroshield" ||
-    productId === "marinox" ||
-    productId === "ecocyst" ||
-    productId === "crustamin" ||
-    productId === "detoxify-x" ? (
-    <div className="p-8 bg-white rounded-lg shadow-xl">
-      <img
-        src={product.image}
-        alt={product.name}
-        className="w-1/4 mx-auto h-1/2 object-contain animate-float-uneven relative"
-        style={{ top: "-10px" }}
-      />
-    </div>
-  ) : (
-    <div className="bg-white rounded-lg shadow-xl p-8">
-      <img
-        src={product.image}
-        alt={product.name}
-        className="w-3/4 mx-auto h-auto object-contain relative"
-        style={{ top: "-10px" }}
-      />
-    </div>
-  )}
-</div>
+            {productId === "aqua-green" ? (
+              <div className="relative rounded-lg p-8 overflow-visible">
+                <img
+                  src={product.image}
+                  alt={product.name}
+                  className="w-3/4 mx-auto h-auto object-contain animate-float-uneven relative"
+                  style={{ top: "-10px" }}
+                />
+              </div>
+            ) : productId === "impetus" ||
+              productId === "maricidin" ||
+              productId === "sporex" ||
+              productId === "vibroshield" ||
+              productId === "marinox" ||
+              productId === "ecocyst" ||
+              productId === "crustamin" ||
+              productId === "detoxify-x" ? (
+              <div className="p-8 bg-white rounded-lg shadow-xl">
+                <img
+                  src={product.image}
+                  alt={product.name}
+                  className="w-1/4 mx-auto h-1/2 object-contain animate-float-uneven relative"
+                  style={{ top: "-10px" }}
+                />
+              </div>
+            ) : (
+              <div className="bg-white rounded-lg shadow-xl p-8">
+                <img
+                  src={product.image}
+                  alt={product.name}
+                  className="w-3/4 mx-auto h-auto object-contain relative"
+                  style={{ top: "-10px" }}
+                />
+              </div>
+            )}
+          </div>
 
 
           {/* RIGHT: Content scrolls normally */}
           <div>
-            <h1 className="text-primary mb-6" style={{ fontSize: "42px", fontWeight: 700, lineHeight: 1.2 }}>
+            <h1 className="text-[#4A5A3C] mb-6" style={{ fontSize: "42px", fontWeight: 700, lineHeight: 1.2 }}>
               {product.name}
             </h1>
 
@@ -679,7 +672,7 @@ export function ProductDetail({ productId, onBack }: ProductDetailProps) {
             </div>
 
             <div className="mb-8">
-              <h2 className="text-foreground mb-4" style={{ fontSize: "24px", fontWeight: 600 }}>
+              <h2 className="text-[#4A5A3C] mb-4" style={{ fontSize: "24px", fontWeight: 600 }}>
                 Product Description
               </h2>
               <p className="text-foreground/80" style={{ fontSize: "16px", lineHeight: 1.8 }}>
@@ -689,7 +682,7 @@ export function ProductDetail({ productId, onBack }: ProductDetailProps) {
 
             {/* Composition */}
             <div style={{ marginBottom: "50px" }}>
-              <h3 className="text-primary mb-4" style={{ fontSize: "20px", fontWeight: 600 }}>
+              <h3 className="text-[#4A5A8C] mb-4" style={{ fontSize: "20px", fontWeight: 600 }}>
                 Composition
               </h3>
               <div className="space-y-2">
@@ -710,7 +703,7 @@ export function ProductDetail({ productId, onBack }: ProductDetailProps) {
 
             <Card className="border-l-4 border-l-accent mb-10">
               <CardContent className="p-6">
-                <h3 className="text-primary mb-3" style={{ fontSize: "18px", fontWeight: 600 }}>
+                <h3 className="text-[#4A5A3C] mb-3" style={{ fontSize: "18px", fontWeight: 600 }}>
                   Dosage & Application
                 </h3>
                 <p className="text-foreground mb-4" style={{ fontSize: "16px" }}>
@@ -733,7 +726,7 @@ export function ProductDetail({ productId, onBack }: ProductDetailProps) {
 
         {/* Key Benefits */}
         <div className="mb-16">
-          <h2 className="text-primary mb-8 text-center" style={{ fontSize: "32px", fontWeight: 600 }}>
+          <h2 className="text-[#4A5A3C] mb-8 text-center" style={{ fontSize: "32px", fontWeight: 600 }}>
             Key Benefits
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
@@ -796,6 +789,12 @@ export function ProductDetail({ productId, onBack }: ProductDetailProps) {
     </div>
   );
 }
+
+
+
+
+
+
 
 
 

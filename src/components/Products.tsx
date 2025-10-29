@@ -117,11 +117,11 @@ export function Products({ onProductClick, onBack }: ProductsProps) {
 
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-primary mb-4" style={{ fontSize: '36px', fontWeight: 700 }}>
+          <h2 className="text-[#4A5A3C]y mb-4" style={{ fontSize: '36px', fontWeight: 700 }}>
             Our Products
           </h2>
-          <p className="text-foreground/70 max-w-2xl mx-auto" style={{ fontSize: '18px' }}>
-            Comprehensive range of aquaculture solutions for sustainable farming
+          <p className="text-[#4A5A3C]/70 max-w-2xl mx-auto" style={{ fontSize: '18px' }}>
+            Comprehensive range of  aquaculture solutions for sustainable farming
           </p>
         </div>
 
@@ -159,7 +159,7 @@ export function Products({ onProductClick, onBack }: ProductsProps) {
                     className="max-h-[240px] w-auto object-contain relative z-10 group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
-                <h3 style={{ fontSize: '24px', fontWeight: 700 }} className="text-primary mb-2">
+                <h3 style={{ fontSize: '24px', fontWeight: 700 }} className="text-[#4A5A3C] mb-2">
                   {product.name}
                 </h3>
                 <p className="text-foreground/70">
