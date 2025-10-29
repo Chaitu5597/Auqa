@@ -3,31 +3,68 @@ name: Deploy Vite React App to GitHub Pages
 on:
   push:
     branches: [ main ]
+  workflow_dispatch:   # optional – lets you trigger manually
 
 permissions:
-  contents: write
+  contents: read      # default
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
+      # -------------------------------------------------
+      # 1. Checkout
+      # -------------------------------------------------
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      # -------------------------------------------------
+      # 2. Node
+      # -------------------------------------------------
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 20   # Vite works best with Node ≥18
+          cache: npm
 
+      # -------------------------------------------------
+      # 3. Install
+      # -------------------------------------------------
       - name: Install dependencies
         run: npm ci
 
+      # -------------------------------------------------
+      # 4. Build
+      # -------------------------------------------------
       - name: Build project
         run: npm run build
+        env:
+          VITE_BASE: /Auqa/   # <-- IMPORTANT! (repo name)
+
+      # -------------------------------------------------
+      # 5. (Optional) Run tests
+      # -------------------------------------------------
+      # - name: Run tests
+      #   run: npm test
+
+      # -------------------------------------------------
+      # 6. Deploy with the official GitHub Pages action
+      # -------------------------------------------------
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+        id: deployment
+        uses: actions/deploy-pages@v4
