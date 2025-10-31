@@ -1,8 +1,8 @@
 {
-  "name": "waterlinks",
+  "name": "AquaPhilic",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://chaitu5597.github.io/WaterLinks_web/",
+  "homepage": "https://chaitu5597.github.io/Auqa/",
   "description": "WaterLinks web app — Vite + React + Tailwind setup with CI/CD for GitHub Pages.",
   "main": "index.js",
   "type": "module",
@@ -10,7 +10,9 @@
     "start": "vite",
     "build": "vite build",
     "serve": "vite preview --port 5000",
-    "deploy": "npm run build && npx gh-pages -d dist"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "preview": "vite preview"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
@@ -65,7 +67,7 @@
     "@types/react-dom": "^19.2.2",
     "@vitejs/plugin-react-swc": "^3.11.0",
     "autoprefixer": "^10.4.21",
-    "gh-pages": "^6.1.1",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.15",
     "typescript": "^5.9.3",
@@ -73,7 +75,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Chaitu5597/WaterLinks_web.git"
+    "url": "git+https://github.com/Chaitu5597/Auqa.git"
   },
   "keywords": [
     "vite",
@@ -85,6 +87,6 @@
   "author": "Chaitanya Kumar",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Chaitu5597/WaterLinks_web/issues"
+    "url": "https://github.com/Chaitu5597/Auqa/issues"
   }
 }

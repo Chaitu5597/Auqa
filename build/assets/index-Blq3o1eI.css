@@ -1793,11 +1793,11 @@
         color: var(--muted-foreground)
     }
 
-    .text-[#4A5A3C] {
+    .text-primary {
         color: var(--primary)
     }
 
-    .text-[#4A5A3C]-foreground {
+    .text-primary-foreground {
         color: var(--primary-foreground)
     }
 
@@ -2032,8 +2032,8 @@
         background-color: var(--primary)
     }
 
-    .selection\:text-[#4A5A3C]-foreground ::selection,
-    .selection\:text-[#4A5A3C]-foreground::selection {
+    .selection\:text-primary-foreground ::selection,
+    .selection\:text-primary-foreground::selection {
         color: var(--primary-foreground)
     }
 
@@ -2222,18 +2222,18 @@
     }
 
     @media (hover: hover) {
-        .hover\:text-[#4A5A3C]:hover {
+        .hover\:text-primary:hover {
             color: var(--primary)
         }
     }
 
     @media (hover: hover) {
-        .hover\:text-[#4A5A3C]\/80:hover {
+        .hover\:text-primary:hover {
             color: var(--primary)
         }
 
         @supports (color: color-mix(in lab, red, red)) {
-            .hover\:text-[#4A5A3C]\/80:hover {
+            .hover\:text-primary:hover {
                 color: color-mix(in oklab, var(--primary) 80%, transparent)
             }
         }
