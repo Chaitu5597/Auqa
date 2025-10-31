@@ -565,7 +565,7 @@ export function ProductDetail({ productId, onBack }: ProductDetailProps) {
       <div className="container mx-auto px-8 lg:px-8 pt-8 pb-8">
         <button
           onClick={onBack}
-          className="flex items-center gap-2 text-primary hover:text-primary/80 transition-colors mb-6 group"
+          className="flex items-center gap-2 text-[#4A5A3C] hover:text-[#4A5A3C]/80 transition-colors mb-6 group"
         >
           <ArrowLeft className="h-5 w-5 group-hover:-translate-x-1 transition-transform" />
           <span style={{ fontSize: "16px", fontWeight: 600 }}>Back to Products</span>
@@ -692,7 +692,7 @@ export function ProductDetail({ productId, onBack }: ProductDetailProps) {
                       {item.component}
                     </span>
                     {/* {item.percentage && (
-                      <span className="text-primary" style={{ fontSize: "15px", fontWeight: 600 }}>
+                      <span className="text-[#4A5A3C]" style={{ fontSize: "15px", fontWeight: 600 }}>
                         {item.percentage}
                       </span>
                     )} */}
@@ -758,7 +758,7 @@ export function ProductDetail({ productId, onBack }: ProductDetailProps) {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               {/* Left */}
               <div>
-                <h2 style={{ fontSize: "32px", fontWeight: 600 }} className="text-primary mb-6">
+                <h2 style={{ fontSize: "32px", fontWeight: 600 }} className="text-[#4A5A3C] mb-6">
                   {product.extraSection.title}
                 </h2>
                 <div className="space-y-4" style={{ fontSize: "16px", lineHeight: 1.8 }}>
@@ -766,7 +766,7 @@ export function ProductDetail({ productId, onBack }: ProductDetailProps) {
                     <p key={i}>{p}</p>
                   ))}
                   <div className="mt-8 p-6 bg-primary/5 rounded-lg border-l-4 border-l-primary">
-                    <h4 style={{ fontSize: "18px", fontWeight: 600 }} className="text-primary mb-2">
+                    <h4 style={{ fontSize: "18px", fontWeight: 600 }} className="text-[#4A5A3C] mb-2">
                       {product.extraSection.highlight.title}
                     </h4>
                     <p className="text-foreground/90">{product.extraSection.highlight.description}</p>

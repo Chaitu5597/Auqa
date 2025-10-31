@@ -478,110 +478,109 @@ import splashVideo from "./assets/bubble.mp4";
 /* ------------------------------------------------------------------ */
 /* #4A5A3C GLASS BUBBLE CURSOR – SAME STYLE AS SPLASH & HERO           */
 /* ------------------------------------------------------------------ */
-const BubbleCursor = () => {
-  useEffect(() => {
-    const style = document.createElement("style");
-    style.innerHTML = `* { cursor: none !important; }`;
-    document.head.appendChild(style);
+// const BubbleCursor = () => {
+//   useEffect(() => {
+//     const style = document.createElement("style");
+//     document.head.appendChild(style);
 
-    const handleMove = (e: MouseEvent) => {
-      const main = document.querySelector(".cursor-main-bubble") as HTMLElement;
-      if (main) {
-        main.style.left = `${e.pageX}px`;
-        main.style.top = `${e.pageY}px`;
-      }
+//     const handleMove = (e: MouseEvent) => {
+//       const main = document.querySelector(".cursor-main-bubble") as HTMLElement;
+//       if (main) {
+//         main.style.left = `${e.pageX}px`;
+//         main.style.top = `${e.pageY}px`;
+//       }
 
-      const trail = document.createElement("div");
-      trail.className = "cursor-bubble-trail";
-      trail.style.left = `${e.pageX}px`;
-      trail.style.top = `${e.pageY}px`;
-      document.body.appendChild(trail);
-      setTimeout(() => trail.remove(), 800);
-    };
+//       const trail = document.createElement("div");
+//       trail.className = "cursor-bubble-trail";
+//       trail.style.left = `${e.pageX}px`;
+//       trail.style.top = `${e.pageY}px`;
+//       document.body.appendChild(trail);
+//       setTimeout(() => trail.remove(), 800);
+//     };
 
-    document.addEventListener("mousemove", handleMove);
-    return () => {
-      document.removeEventListener("mousemove", handleMove);
-      style.remove();
-    };
-  }, []);
+//     document.addEventListener("mousemove", handleMove);
+//     return () => {
+//       document.removeEventListener("mousemove", handleMove);
+//       style.remove();
+//     };
+//   }, []);
 
-  return (
-    <>
-      <div id="bubble-cursor-layer">
-        <div className="cursor-main-bubble" />
-      </div>
+//   return (
+//     <>
+//       <div id="bubble-cursor-layer">
+//         <div className="cursor-main-bubble" />
+//       </div>
 
-      <style>{`
-        #bubble-cursor-layer {
-          position: fixed;
-          inset: 0;
-          pointer-events: none;
-          z-index: 999999;
-        }
+//       <style>{`
+//         #bubble-cursor-layer {
+//           position: fixed;
+//           inset: 0;
+//           pointer-events: none;
+//           z-index: 999999;
+//         }
 
-        /* MAIN #4A5A3C GLASS CURSOR */
-        .cursor-main-bubble {
-          position: fixed;
-          width: 22px;
-          height: 22px;
-          border-radius: 50%;
-          background: radial-gradient(
-            circle at 30% 30%,
-            rgba(74, 90, 60, 0.95),
-            rgba(60, 75, 50, 0.65) 45%,
-            rgba(40, 55, 35, 0.35) 75%,
-            transparent
-          );
-          border: 1.3px solid rgba(74, 90, 60, 0.9);
-          box-shadow:
-            0 0 12px rgba(74, 90, 60, 0.7),
-            inset 0 0 8px rgba(255, 255, 255, 0.6),
-            0 0 20px rgba(74, 90, 60, 0.3);
-          pointer-events: none;
-          transform: translate(-50%, -50%);
-          transition: transform 0.07s ease-out;
-          filter: blur(0.4px);
-          opacity: 0.9;
-        }
+//         /* MAIN #4A5A3C GLASS CURSOR */
+//         .cursor-main-bubble {
+//           position: fixed;
+//           width: 22px;
+//           height: 22px;
+//           border-radius: 50%;
+//           background: radial-gradient(
+//             circle at 30% 30%,
+//             rgba(74, 90, 60, 0.95),
+//             rgba(60, 75, 50, 0.65) 45%,
+//             rgba(40, 55, 35, 0.35) 75%,
+//             transparent
+//           );
+//           border: 1.3px solid rgba(74, 90, 60, 0.9);
+//           box-shadow:
+//             0 0 12px rgba(74, 90, 60, 0.7),
+//             inset 0 0 8px rgba(255, 255, 255, 0.6),
+//             0 0 20px rgba(74, 90, 60, 0.3);
+//           pointer-events: none;
+//           transform: translate(-50%, -50%);
+//           transition: transform 0.07s ease-out;
+//           filter: blur(0.4px);
+//           opacity: 0.9;
+//         }
 
-        /* TRAIL: TINY #4A5A3C BUBBLES */
-        .cursor-bubble-trail {
-          position: fixed;
-          width: ${4 + Math.random() * 8}px;
-          height: ${4 + Math.random() * 8}px;
-          border-radius: 50%;
-          background: radial-gradient(
-            circle at 30% 30%,
-            rgba(74, 90, 60, 0.85),
-            rgba(60, 75, 50, 0.45),
-            transparent
-          );
-          border: 1px solid rgba(74, 90, 60, 0.7);
-          box-shadow:
-            0 0 6px rgba(74, 90, 60, 0.45),
-            inset 0 0 3px rgba(255, 255, 255, 0.5);
-          pointer-events: none;
-          transform: translate(-50%, -50%);
-          animation: cursorTrail 0.8s ease-out forwards;
-          filter: blur(0.3px);
-          opacity: 0.65;
-        }
+//         /* TRAIL: TINY #4A5A3C BUBBLES */
+//         .cursor-bubble-trail {
+//           position: fixed;
+//           width: ${4 + Math.random() * 8}px;
+//           height: ${4 + Math.random() * 8}px;
+//           border-radius: 50%;
+//           background: radial-gradient(
+//             circle at 30% 30%,
+//             rgba(74, 90, 60, 0.85),
+//             rgba(60, 75, 50, 0.45),
+//             transparent
+//           );
+//           border: 1px solid rgba(74, 90, 60, 0.7);
+//           box-shadow:
+//             0 0 6px rgba(74, 90, 60, 0.45),
+//             inset 0 0 3px rgba(255, 255, 255, 0.5);
+//           pointer-events: none;
+//           transform: translate(-50%, -50%);
+//           animation: cursorTrail 0.8s ease-out forwards;
+//           filter: blur(0.3px);
+//           opacity: 0.65;
+//         }
 
-        @keyframes cursorTrail {
-          0%   { opacity: 0.7; transform: translate(-50%,-50%) scale(1); }
-          50%  { opacity: 0.5; transform: translate(-50%,-55%) scale(1.2); }
-          100% { opacity: 0;   transform: translate(-50%,-110%) scale(0.4); }
-        }
+//         @keyframes cursorTrail {
+//           0%   { opacity: 0.7; transform: translate(-50%,-50%) scale(1); }
+//           50%  { opacity: 0.5; transform: translate(-50%,-55%) scale(1.2); }
+//           100% { opacity: 0;   transform: translate(-50%,-110%) scale(0.4); }
+//         }
 
-        @media (max-width: 768px) {
-          .cursor-main-bubble { width: 16px; height: 16px; }
-          .cursor-bubble-trail { opacity: 0.5; }
-        }
-      `}</style>
-    </>
-  );
-};
+//         @media (max-width: 768px) {
+//           .cursor-main-bubble { width: 16px; height: 16px; }
+//           .cursor-bubble-trail { opacity: 0.5; }
+//         }
+//       `}</style>
+//     </>
+//   );
+// };
 
 /* ------------------------------------------------------------------ */
 /* GLOBAL BACKGROUND BUBBLES – #4A5A3C TINY GLASS                       */
@@ -828,7 +827,7 @@ export default function App() {
   return (
     <div style={{ minHeight: "100vh", position: "relative", overflow: "visible" }}>
       <GlobalBubbles />
-      <BubbleCursor />
+     
 
       <Header onNavigate={handleNavigate} />
 

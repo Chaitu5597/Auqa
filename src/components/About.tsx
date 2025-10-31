@@ -6,10 +6,10 @@ export function About() {
     <section id="about" className="py-20 bg-white">
       <div className="container mx-auto px-4 lg:px-8">
         <h2
-          className="text-primary mb-12 text-center"
+          className="text-[#4A5A3C] mb-12 text-center "
           style={{ fontSize: "40px", fontWeight: 600 }}
         >
-          About WaterLinks
+          About Aqua Philic
         </h2>
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -18,7 +18,7 @@ export function About() {
               className="text-foreground"
               style={{ fontSize: "18px", lineHeight: 1.8 }}
             >
-              WaterLinks Scientific Solutions Pvt. Ltd. is a
+              Aqua Philic Scientific Solutions Pvt. Ltd. is a
               pioneering aquaculture bio-science company
               dedicated to revolutionizing sustainable farming
               practices. Founded by a team of expert
@@ -51,7 +51,7 @@ export function About() {
           <div className="relative h-[400px] rounded-[10px] overflow-hidden shadow-[0px_20px_25px_-5px_rgba(0,0,0,0.1),0px_8px_10px_-6px_rgba(0,0,0,0.1)]">
             <img
               src={aboutImage}
-              alt="About WaterLinks Scientific Solutions - Lab Research"
+              alt="About Aqua Philic Scientific Solutions - Lab Research"
               className="w-full h-full object-cover object-center"
             />
           </div>

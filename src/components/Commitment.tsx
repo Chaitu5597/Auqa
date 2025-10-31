@@ -7,7 +7,7 @@ export function Commitment() {
       icon: FlaskConical,
       title: "Scientific BioSolutions",
       description: "Pioneering bio-innovations for aquaculture using advanced research and development.",
-      color: "text-primary"
+      color: "text-[#4A5A3C]"
     },
     {
       icon: Leaf,
@@ -26,10 +26,10 @@ export function Commitment() {
   return (
     <section className="py-20 bg-muted/30">
       <div className="container mx-auto px-4 lg:px-8">
-        <h2 className="text-primary mb-12 text-center" style={{ fontSize: '40px', fontWeight: 600 }}>
+        <h2 className="text-[#4A5A3C] mb-12 text-center" style={{ fontSize: '40px', fontWeight: 600 }}>
           Our Commitment
         </h2>
-        
+
         <div className="grid md:grid-cols-3 gap-8">
           {commitments.map((item, index) => (
             <Card key={index} className="border-none shadow-lg hover:shadow-xl transition-shadow">

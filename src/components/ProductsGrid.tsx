@@ -114,7 +114,7 @@ export function ProductsGrid({ onProductClick }: ProductsGridProps) {
                 )}
               </div>
               <CardContent className="p-6">
-                <h3 className="text-primary mb-2" style={{ fontSize: '22px', fontWeight: 600 }}>
+                <h3 className="text-[#4A5A3C] mb-2" style={{ fontSize: '22px', fontWeight: 600 }}>
                   {product.name}
                 </h3>
                 <p className="text-foreground" style={{ fontSize: '16px' }}>

@@ -22,6 +22,10 @@ export function Career({ onBack }: CareerProps) {
     coverLetter: "",
   });
 
+
+
+
+
   const jobOpenings = [
     {
       id: "1",
@@ -131,7 +135,7 @@ export function Career({ onBack }: CareerProps) {
         {onBack && (
           <button
             onClick={onBack}
-            className="flex items-center gap-2 text-primary hover:text-primary/80 transition-colors mb-6 group"
+            className="flex items-center gap-2 text-[#4A5A3C] hover:text-[#4A5A3C] transition-colors mb-6 group"
           >
             <ArrowLeft className="h-5 w-5 group-hover:-translate-x-1 transition-transform" />
             <span style={{ fontSize: "16px", fontWeight: 600 }}>
@@ -143,7 +147,7 @@ export function Career({ onBack }: CareerProps) {
         {/* Header */}
         <div className="text-center mb-12">
           <h2
-            className="text-primary mb-4"
+            className="text-[#4A5A3C] mb-4"
             style={{ fontSize: "36px", fontWeight: 700 }}
           >
             Career Opportunities
@@ -161,18 +165,17 @@ export function Career({ onBack }: CareerProps) {
           {jobOpenings.map((job) => (
             <Card
               key={job.id}
-              className={`border-2 transition-all duration-300 hover:shadow-xl ${
-                selectedJob === job.id
+              className={`border-2 transition-all duration-300 hover:shadow-xl ${selectedJob === job.id
                   ? "border-primary shadow-lg"
                   : "border-primary/20 hover:border-primary/40"
-              }`}
+                }`}
             >
               <CardContent className="p-6">
                 <div className="flex items-start justify-between mb-4">
                   <div>
                     <h3
                       style={{ fontSize: "20px", fontWeight: 700 }}
-                      className="text-primary mb-2"
+                      className="text-[#4A5A3C] mb-2"
                     >
                       {job.title}
                     </h3>
@@ -203,7 +206,7 @@ export function Career({ onBack }: CareerProps) {
                 <div className="mb-4">
                   <p
                     style={{ fontSize: "15px", fontWeight: 600 }}
-                    className="text-primary mb-2"
+                    className="text-[#4A5A3C] mb-2"
                   >
                     Requirements:
                   </p>
@@ -218,8 +221,8 @@ export function Career({ onBack }: CareerProps) {
 
                 <Button
                   onClick={() => handleApply(job.id)}
-                  className="w-full bg-primary hover:bg-primary/90 text-white"
-                  style={{ fontSize: "15px", fontWeight: 600 }}
+                  className="w-full hover:bg-primary/90 text-white"
+                  style={{ fontSize: "15px", fontWeight: 600 , backgroundColor: '#4A5A3C'}}
                 >
                   Apply Now
                 </Button>
@@ -235,7 +238,7 @@ export function Career({ onBack }: CareerProps) {
               <CardContent className="p-8">
                 <div className="mb-6">
                   <h3
-                    className="text-primary mb-2"
+                    className="text-[#4A5A3C] mb-2"
                     style={{ fontSize: "24px", fontWeight: 700 }}
                   >
                     Apply for {selectedJobData?.title}
@@ -327,7 +330,7 @@ export function Career({ onBack }: CareerProps) {
                   </div>
 
                   <div className="border-2 border-dashed border-primary/30 rounded-lg p-6 text-center">
-                    <FileText className="h-12 w-12 mx-auto mb-3 text-primary/60" />
+                    <FileText className="h-12 w-12 mx-auto mb-3 text-[#4A5A3C]/60" />
                     <p className="text-foreground/70 mb-2">
                       Upload your resume (PDF, DOC, DOCX)
                     </p>

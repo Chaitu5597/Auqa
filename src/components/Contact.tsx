@@ -31,14 +31,14 @@ export function Contact() {
     {
       icon: Mail,
       label: "Email",
-      value: "info@waterlinks.in",
-      href: "mailto:info@waterlinks.in"
+      value: "info@Aqua Philic.in",
+      href: "mailto:info@AquaPhilic.in"
     },
     {
       icon: Globe,
       label: "Website",
-      value: "www.waterlinks.in",
-      href: "https://www.waterlinks.in"
+      value: "www.Aqua Philic.in",
+      href: "https://www.AquaPhilic.in"
     },
     {
       icon: MapPin,
@@ -49,12 +49,12 @@ export function Contact() {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-muted/30">
+    <section id="contact" className=" text-[#4A5A3C] py-20 bg-muted/30">
       <div className="container mx-auto px-4 lg:px-8">
-        <h2 className="text-primary mb-12 text-center" style={{ fontSize: '40px', fontWeight: 600 }}>
+        <h2 className="text-[#4A5A3C] mb-12 text-center" style={{ fontSize: '40px', fontWeight: 600 }}>
           Get Connect
         </h2>
-        
+
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto items-start">
           <div className="h-full">
             <Card className="shadow-lg h-full flex flex-col">
@@ -73,7 +73,7 @@ export function Contact() {
                       className="mt-2"
                     />
                   </div>
-                  
+
                   <div>
                     <Label htmlFor="email">Email</Label>
                     <Input
@@ -85,7 +85,7 @@ export function Contact() {
                       className="mt-2"
                     />
                   </div>
-                  
+
                   <div>
                     <Label htmlFor="phone">Phone Number</Label>
                     <Input
@@ -97,7 +97,7 @@ export function Contact() {
                       className="mt-2"
                     />
                   </div>
-                  
+
                   <div className="flex-1 flex flex-col">
                     <Label htmlFor="message">Message</Label>
                     <Textarea
@@ -109,15 +109,15 @@ export function Contact() {
                       className="mt-2 flex-1"
                     />
                   </div>
-                  
-                  <Button type="submit" className="w-full bg-primary hover:bg-primary/90">
+
+                  <Button type="submit" className="w-full text-white hover:bg-primary/90" >
                     Submit
                   </Button>
                 </form>
               </CardContent>
             </Card>
           </div>
-          
+
           <div className="h-full flex flex-col">
             <h3 className="mb-6" style={{ fontSize: '24px', fontWeight: 600 }}>
               Contact Information
@@ -129,17 +129,17 @@ export function Contact() {
                     <div className="flex items-start gap-4">
                       <div className="flex-shrink-0">
                         <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                          <item.icon className="w-6 h-6 text-primary" />
+                          <item.icon className="w-6 h-6 text-[#4A5A3C]" />
                         </div>
                       </div>
                       <div className="flex-1">
-                        <h4 className="text-primary mb-1" style={{ fontSize: '18px', fontWeight: 600 }}>
+                        <h4 className="text-[#4A5A3C] mb-1" style={{ fontSize: '18px', fontWeight: 600 }}>
                           {item.label}
                         </h4>
                         {item.href ? (
-                          <a 
-                            href={item.href} 
-                            className="text-foreground hover:text-primary transition-colors"
+                          <a
+                            href={item.href}
+                            className="text-foreground hover:text-[#4A5A3C] transition-colors"
                             style={{ fontSize: '16px' }}
                           >
                             {item.value}

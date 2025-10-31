@@ -10,7 +10,7 @@ export function CoastalMap() {
       </div>
 
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
-        <h2 className="text-primary mb-4 text-center" style={{ fontSize: '40px', fontWeight: 600 }}>
+        <h2 className="text-[#4A5A3C] mb-4 text-center" style={{ fontSize: '40px', fontWeight: 600 }}>
           Our Presence
         </h2>
         <p className="text-center text-foreground/80 mb-12 max-w-2xl mx-auto" style={{ fontSize: '18px' }}>

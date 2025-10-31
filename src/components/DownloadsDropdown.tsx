@@ -157,7 +157,7 @@ export function DownloadsDropdown({ isOpen, onClose }: DownloadsDropdownProps) {
   return (
     <>
       {/* Backdrop */}
-      <div 
+      <div
         className="fixed inset-0 bg-black/30 z-40 backdrop-blur-sm"
         onClick={onClose}
       />
@@ -186,8 +186,8 @@ export function DownloadsDropdown({ isOpen, onClose }: DownloadsDropdownProps) {
             {/* Single Filter Container */}
             <div className="bg-gradient-to-r from-blue-50 to-teal-50 p-4 md:p-6 border-b-2 border-primary/20">
               <div className="flex items-center gap-2 mb-4">
-                <Filter className="h-5 w-5 md:h-6 md:w-6 text-primary" />
-                <h3 className="text-primary" style={{ fontSize: '16px', fontWeight: 700 }}>
+                <Filter className="h-5 w-5 md:h-6 md:w-6 text-[#4A5A3C]" />
+                <h3 className="text-[#4A5A3C]" style={{ fontSize: '16px', fontWeight: 700 }}>
                   Filters
                 </h3>
               </div>
@@ -196,8 +196,8 @@ export function DownloadsDropdown({ isOpen, onClose }: DownloadsDropdownProps) {
                 {/* Filter by Category Section */}
                 <div className="bg-white rounded-lg p-4 border-2 border-primary/20 shadow-sm">
                   <div className="flex items-center gap-2 mb-3">
-                    <BookOpen className="h-4 w-4 md:h-5 md:w-5 text-primary" />
-                    <p className="text-primary" style={{ fontSize: '14px', fontWeight: 600 }}>
+                    <BookOpen className="h-4 w-4 md:h-5 md:w-5 text-[#4A5A3C]" />
+                    <p className="text-[#4A5A3C]" style={{ fontSize: '14px', fontWeight: 600 }}>
                       Filter by Category
                     </p>
                   </div>
@@ -206,11 +206,10 @@ export function DownloadsDropdown({ isOpen, onClose }: DownloadsDropdownProps) {
                       <button
                         key={category.id}
                         onClick={() => setSelectedCategory(category.id)}
-                        className={`px-3 md:px-4 py-2 md:py-2.5 rounded-lg transition-all duration-300 flex items-center gap-1.5 border-2 ${
-                          selectedCategory === category.id
+                        className={`px-3 md:px-4 py-2 md:py-2.5 rounded-lg transition-all duration-300 flex items-center gap-1.5 border-2 ${selectedCategory === category.id
                             ? "bg-primary text-white shadow-lg scale-105 border-primary"
                             : "bg-white text-foreground hover:bg-primary/5 border-primary/30 hover:border-primary/60"
-                        }`}
+                          }`}
                         style={{ fontSize: '13px', fontWeight: 600 }}
                       >
                         <span className="text-base">{category.icon}</span>
@@ -233,11 +232,10 @@ export function DownloadsDropdown({ isOpen, onClose }: DownloadsDropdownProps) {
                       <button
                         key={lang.code}
                         onClick={() => setSelectedLanguage(lang.code)}
-                        className={`px-3 md:px-4 py-2 md:py-2.5 rounded-lg transition-all duration-300 border-2 ${
-                          selectedLanguage === lang.code
+                        className={`px-3 md:px-4 py-2 md:py-2.5 rounded-lg transition-all duration-300 border-2 ${selectedLanguage === lang.code
                             ? "bg-secondary text-white shadow-lg scale-105 border-secondary"
                             : "bg-white text-foreground hover:bg-secondary/5 border-secondary/30 hover:border-secondary/60"
-                        }`}
+                          }`}
                         style={{ fontSize: '12px', fontWeight: 500 }}
                       >
                         <span className="md:text-[13px]">{lang.name}</span>
@@ -250,22 +248,21 @@ export function DownloadsDropdown({ isOpen, onClose }: DownloadsDropdownProps) {
 
             {/* Content Area - Dynamic Columns Based on Category */}
             <div className="overflow-y-auto max-h-[60vh] md:max-h-[50vh] p-3 md:p-6">
-              <div className={`grid grid-cols-1 gap-4 md:gap-6 ${
-                selectedCategory === "all" ? "md:grid-cols-3" : "md:grid-cols-2 lg:grid-cols-3"
-              }`}>
-                
+              <div className={`grid grid-cols-1 gap-4 md:gap-6 ${selectedCategory === "all" ? "md:grid-cols-3" : "md:grid-cols-2 lg:grid-cols-3"
+                }`}>
+
                 {/* Brochures Column */}
                 {filteredMaterials.brochures.length > 0 && (
                   <div className="space-y-3 md:space-y-4">
                     <div className="flex items-center gap-2 mb-3 md:mb-4 pb-2 md:pb-3 border-b-2 border-primary/30 sticky top-0 bg-white z-10">
-                      <BookOpen className="h-5 w-5 md:h-6 md:w-6 text-primary" />
-                      <h3 className="text-primary" style={{ fontSize: '18px', fontWeight: 700 }}>
+                      <BookOpen className="h-5 w-5 md:h-6 md:w-6 text-[#4A5A3C]" />
+                      <h3 className="text-[#4A5A3C]" style={{ fontSize: '18px', fontWeight: 700 }}>
                         📘 Brochures
                       </h3>
-                    </div>  
+                    </div>
                     <div className="space-y-3">
                       {filteredMaterials.brochures.map((material) => (
-                        <Card 
+                        <Card
                           key={material.id}
                           className="hover:shadow-lg transition-all duration-300 border-2 border-muted/40 hover:border-primary/50 overflow-hidden"
                         >
@@ -284,7 +281,7 @@ export function DownloadsDropdown({ isOpen, onClose }: DownloadsDropdownProps) {
 
                             {/* Details */}
                             <div className="mb-3">
-                              <h4 className="text-primary mb-1.5 md:mb-2" style={{ fontSize: '13px', fontWeight: 600 }}>
+                              <h4 className="text-[#4A5A3C] mb-1.5 md:mb-2" style={{ fontSize: '13px', fontWeight: 600 }}>
                                 {material.name}
                               </h4>
                               <div className="flex items-center gap-2 md:gap-3 text-xs text-muted-foreground mb-2">
@@ -320,7 +317,7 @@ export function DownloadsDropdown({ isOpen, onClose }: DownloadsDropdownProps) {
                     </div>
                     <div className="space-y-3">
                       {filteredMaterials.leaflets.map((material) => (
-                        <Card 
+                        <Card
                           key={material.id}
                           className="hover:shadow-lg transition-all duration-300 border-2 border-muted/40 hover:border-secondary/50 overflow-hidden"
                         >
@@ -375,7 +372,7 @@ export function DownloadsDropdown({ isOpen, onClose }: DownloadsDropdownProps) {
                     </div>
                     <div className="space-y-3">
                       {filteredMaterials.pamphlets.map((material) => (
-                        <Card 
+                        <Card
                           key={material.id}
                           className="hover:shadow-lg transition-all duration-300 border-2 border-muted/40 hover:border-accent/50 overflow-hidden"
                         >
@@ -425,7 +422,7 @@ export function DownloadsDropdown({ isOpen, onClose }: DownloadsDropdownProps) {
             {/* Footer */}
             <div className="bg-muted/20 px-3 md:px-6 py-3 md:py-4 border-t border-primary/10 text-center">
               <p className="text-xs md:text-sm text-muted-foreground">
-                Need help? Contact us at <a href="mailto:info@waterlinks.in" className="text-primary hover:underline">info@waterlinks.in</a>
+                Need help? Contact us at <a href="mailto:info@AquaPhilic.in" className="text-[#4A5A3C] hover:underline">info@AquaPhilic.in</a>
               </p>
             </div>
           </CardContent>

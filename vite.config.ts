@@ -5,7 +5,7 @@
 
   export default defineConfig({
     plugins: [react()],
-    base: "/Auqu/",
+    base: "/Auqu_web/",
     
     resolve: {
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],

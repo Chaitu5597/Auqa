@@ -18,31 +18,31 @@ export function Footer({ onNavigate }: FooterProps) {
   const socialLinks = [
     {
       icon: Linkedin,
-      href: "https://www.linkedin.com/company/waterlinks",
+      href: "https://www.linkedin.com/company/AquaPhilic",
       color: "#4A5A3C",
       label: "LinkedIn",
     },
     {
       icon: Youtube,
-      href: "https://www.youtube.com/@waterlinks",
+      href: "https://www.youtube.com/@AquaPhilic",
       color: "#6E8B64",
       label: "YouTube",
     },
     {
       icon: Twitter,
-      href: "https://twitter.com/waterlinks",
+      href: "https://twitter.com/AquaPhilic",
       color: "#4A5A3C",
       label: "Twitter",
     },
     {
       icon: Instagram,
-      href: "https://www.instagram.com/waterlinks",
+      href: "https://www.instagram.com/AquaPhilic",
       color: "#6E8B64",
       label: "Instagram",
     },
     {
       icon: Facebook,
-      href: "https://www.facebook.com/waterlinks",
+      href: "https://www.facebook.com/AquaPhilic",
       color: "#4A5A3C",
       label: "Facebook",
     },
@@ -72,7 +72,7 @@ export function Footer({ onNavigate }: FooterProps) {
 
               }}
             />
-            <p className="text-[#4A5A3C]/80 text-sm sm:text-base leading-relaxed">
+            <p className="text-[#4A5A3C] text-sm sm:text-base leading-relaxed">
               The Scientific Way to Sustainable Farming
             </p>
           </div>
@@ -120,21 +120,21 @@ export function Footer({ onNavigate }: FooterProps) {
               <p>
                 Email:{" "}
                 <a
-                  href="mailto:info@waterlinks.in"
+                  href="mailto:info@AquaPhilic.in"
                   className="hover:text-[#6E8B64] transition-colors underline-offset-4 hover:underline"
                 >
-                  info@waterlinks.in
+                  info@AquaPhilic.in
                 </a>
               </p>
               <p>
                 Website:{" "}
                 <a
-                  href="https://www.waterlinks.in"
+                  href="https://www.AquaPhilic.in"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-[#6E8B64] transition-colors underline-offset-4 hover:underline"
                 >
-                  www.waterlinks.in
+                  www.AquaPhilic.in
                 </a>
               </p>
 
@@ -193,7 +193,7 @@ export function Footer({ onNavigate }: FooterProps) {
         {/* Bottom bar */}
         <div className="border-t border-[#DCE1D8] text-center pt-6 ">
           <p className="text-[#4A5A3C]/70 text-xs sm:text-sm">
-            © 2025 WaterLinks Scientific Solutions Pvt. Ltd. All rights
+            © 2025 Aqua Philic Scientific Solutions Pvt. Ltd. All rights
             reserved.
           </p>
         </div>

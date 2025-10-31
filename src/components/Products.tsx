@@ -108,7 +108,7 @@ export function Products({ onProductClick, onBack }: ProductsProps) {
         {onBack && (
           <button
             onClick={onBack}
-            className="flex items-center gap-2 text-primary hover:text-primary/80 transition-colors mb-6 group"
+            className="flex items-center gap-2 text-[#4A5A3C] hover:text-[#4A5A3C]/80 transition-colors mb-6 group"
           >
             <ArrowLeft className="h-5 w-5 group-hover:-translate-x-1 transition-transform" />
             <span style={{ fontSize: '16px', fontWeight: 600 }}>Back to Home</span>
@@ -132,8 +132,8 @@ export function Products({ onProductClick, onBack }: ProductsProps) {
               key={category.id}
               onClick={() => setSelectedCategory(category.id)}
               className={`px-6 py-3 rounded-lg transition-all duration-300 ${selectedCategory === category.id
-                  ? "bg-primary text-white shadow-lg scale-105"
-                  : "bg-white text-foreground hover:bg-primary/10 border-2 border-primary/20"
+                ? "bg-primary text-white shadow-lg scale-105"
+                : "bg-white text-foreground hover:bg-primary/10 border-2 border-primary/20"
                 }`}
               style={{ fontSize: '15px', fontWeight: 600 }}
             >

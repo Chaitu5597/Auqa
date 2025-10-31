@@ -10,6 +10,7 @@ import { Label } from "./ui/label";
 import { ArrowLeft, Users, Briefcase, GraduationCap, Stethoscope } from "lucide-react";
 import { toast } from "sonner";
 import emailjs from "@emailjs/browser";
+import { styleText } from "util";
 
 interface JoinNetworkProps {
   onBack?: () => void;
@@ -28,6 +29,10 @@ export function JoinOurNetwork({ onBack }: JoinNetworkProps) {
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState<{ type: "success" | "error"; text: string } | null>(null);
 
+  const bgActive = {
+  backgroundColor: "#4A5A3C",
+  color: 'white',
+};
   const categories = [
     {
       id: "dealer",
@@ -41,7 +46,7 @@ export function JoinOurNetwork({ onBack }: JoinNetworkProps) {
       icon: Users,
       description: "Join our network of successful aquaculture farmers",
     },
-   
+
   ];
 
   const handleInputChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -248,31 +253,30 @@ export function JoinOurNetwork({ onBack }: JoinNetworkProps) {
                 </div>
               </RadioGroup>
             </div> */}
-            
 
 
-<div>
-  <label className="block text-foreground mb-3 font-medium" style={{ fontSize: "16px" }}>
-    Farm Type *
-  </label>
-  <div className="flex gap-4">
-    {["shrimp", "fish"].map((type) => (
-      <Button
-        key={type}
-        type="button"
-        onClick={() => handleFarmTypeChange(type)}
-        className={`flex-1 px-6 py-3 rounded-lg transition-all duration-300 capitalize ${
-          formData.farmType === type
-            ? "bg-primary text-white shadow-lg scale-105"
-            : "bg-white text-foreground hover:bg-primary/10 border-2 border-primary/20"
-        }`}
-        style={{ fontSize: "15px", fontWeight: 600 }}
-      >
-        {type}
-      </Button>
-    ))}
-  </div>
-</div>
+
+            <div>
+              <label className="block text-foreground mb-3 font-medium" style={{ fontSize: "16px" }}>
+                Farm Type *
+              </label>
+              <div className="flex gap-4">
+                {["shrimp", "fish"].map((type) => (
+                  <Button
+                    key={type}
+                    type="button"
+                    onClick={() => handleFarmTypeChange(type)}
+                    className={`flex-1 px-6 py-3 rounded-lg transition-all duration-300 capitalize ${formData.farmType === type
+                        ? "bg-primary text-white shadow-lg scale-105"
+                        : "bg-white text-foreground hover:bg-primary/10 border-2 border-primary/20"
+                      }`}
+                    style={{ fontSize: "15px", fontWeight: 600 }}
+                  >
+                    {type}
+                  </Button>
+                ))}
+              </div>
+            </div>
 
 
 
@@ -401,7 +405,7 @@ export function JoinOurNetwork({ onBack }: JoinNetworkProps) {
         {onBack && (
           <button
             onClick={onBack}
-            className="flex items-center gap-2 text-primary hover:text-primary/80 transition-colors mb-6 group"
+            className="flex items-center gap-2 text-[#4A5A3C] hover:text-[#4A5A3C]/80 transition-colors mb-6 group"
           >
             <ArrowLeft className="h-5 w-5 group-hover:-translate-x-1 transition-transform" />
             <span style={{ fontSize: "16px", fontWeight: 600 }}>Back to Home</span>
@@ -410,7 +414,7 @@ export function JoinOurNetwork({ onBack }: JoinNetworkProps) {
 
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-primary mb-4" style={{ fontSize: "36px", fontWeight: 700 }}>
+          <h2 className="text-[#4A5A3C] mb-4" style={{ fontSize: "36px", fontWeight: 700 }}>
             Join Our Network
           </h2>
           <p className="text-foreground/70 max-w-2xl mx-auto" style={{ fontSize: "18px" }}>
@@ -426,21 +430,19 @@ export function JoinOurNetwork({ onBack }: JoinNetworkProps) {
               <Card
                 key={category.id}
                 onClick={() => setSelectedCategory(category.id as TabType)}
-                className={`cursor-pointer transition-all duration-300 hover:shadow-xl ${
-                  selectedCategory === category.id
-                    ? "border-2 border-primary shadow-lg scale-105"
+                className={`cursor-pointer transition-all duration-300 hover:shadow-xl ${selectedCategory === category.id
+                    ? "border-2 border-primary shadow-lg scale-105" 
                     : "border-2 border-primary/20 hover:border-primary/40"
-                }`}
+                  }`}
               >
                 <CardContent className="p-6 text-center">
                   <div
-                    className={`mx-auto w-16 h-16 rounded-full flex items-center justify-center mb-4 ${
-                      selectedCategory === category.id ? "bg-primary text-white" : "bg-primary/10 text-primary"
-                    }`}
+                    className={`mx-auto w-16 h-16 rounded-full flex items-center justify-center mb-4 ${selectedCategory === category.id ? "bg-primary text-white" : "bg-primary/10 text-[#4A5A3C]"
+                      }`}
                   >
                     <Icon className="h-8 w-8" />
                   </div>
-                  <h3 style={{ fontSize: "20px", fontWeight: 700 }} className="text-primary mb-2">
+                  <h3 style={{ fontSize: "20px", fontWeight: 700 }} className="text-[#4A5A3C] mb-2">
                     {category.name}
                   </h3>
                   <p className="text-foreground/70" style={{ fontSize: "14px" }}>
@@ -457,7 +459,7 @@ export function JoinOurNetwork({ onBack }: JoinNetworkProps) {
           <Card className="border-2 border-primary/20 shadow-xl">
             <CardContent className="p-8">
               <div className="mb-6">
-                <h3 className="text-primary mb-2" style={{ fontSize: "24px", fontWeight: 700 }}>
+                <h3 className="text-[#4A5A3C] mb-2" style={{ fontSize: "24px", fontWeight: 700 }}>
                   Apply as {selectedCategoryData?.name}
                 </h3>
                 <p className="text-foreground/70">{selectedCategoryData?.description}</p>
@@ -467,9 +469,8 @@ export function JoinOurNetwork({ onBack }: JoinNetworkProps) {
                 {renderForm()}
                 {message && (
                   <div
-                    className={`mt-4 text-center font-medium ${
-                      message.type === "success" ? "text-green-600" : "text-red-600"
-                    }`}
+                    className={`mt-4 text-center font-medium ${message.type === "success" ? "text-green-600" : "text-red-600"
+                      }`}
                   >
                     {message.text}
                   </div>
@@ -477,8 +478,8 @@ export function JoinOurNetwork({ onBack }: JoinNetworkProps) {
                 <Button
                   type="submit"
                   disabled={loading}
-                  className="w-full bg-primary hover:bg-primary/90 text-white py-6"
-                  style={{ fontSize: "16px", fontWeight: 600 }}
+                  className="w-full  hover:bg-primary/90 text-white py-6"
+                  style={{ fontSize: "16px", fontWeight: 600 , backgroundColor: '#4A5A3C'}}
                 >
                   {loading ? "Submitting..." : "Submit Application"}
                 </Button>

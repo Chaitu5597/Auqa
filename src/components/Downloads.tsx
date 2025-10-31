@@ -169,7 +169,7 @@
 //         </div>
 
 //         <div className="mb-3">
-//           <h4 className="text-primary mb-2" style={{ fontSize: '13px', fontWeight: 600 }}>
+//           <h4 className="text-[#4A5A3C] mb-2" style={{ fontSize: '13px', fontWeight: 600 }}>
 //             {material.name}
 //           </h4>
 //           <div className="flex items-center gap-3 text-xs text-muted-foreground mb-2">
@@ -197,7 +197,7 @@
 //         {onBack && (
 //           <button
 //             onClick={onBack}
-//             className="flex items-center gap-2 text-primary hover:text-primary/80 transition-colors mb-6 group"
+//             className="flex items-center gap-2 text-[#4A5A3C] hover:text-[#4A5A3C]/80 transition-colors mb-6 group"
 //           >
 //             <ArrowLeft className="h-5 w-5 group-hover:-translate-x-1 transition-transform" />
 //             <span style={{ fontSize: '16px', fontWeight: 600 }}>Back to Home</span>
@@ -207,8 +207,8 @@
 //         {/* Header */}
 //         <div className="text-center mb-8">
 //           <div className="flex items-center justify-center gap-3 mb-3">
-//             <Download className="h-10 w-10 text-primary" />
-//             <h1 className="text-primary" style={{ fontSize: '32px', fontWeight: 700 }}>Download Center</h1>
+//             <Download className="h-10 w-10 text-[#4A5A3C]" />
+//             <h1 className="text-[#4A5A3C]" style={{ fontSize: '32px', fontWeight: 700 }}>Download Center</h1>
 //           </div>
 //           <p className="text-muted-foreground" style={{ fontSize: '16px' }}>
 //             Access our comprehensive library of aquaculture resources
@@ -229,7 +229,7 @@
 //                     </g>
 //                   </svg>
 //                 </div>
-//                 <p className="text-primary" style={{ fontSize: '14px', fontWeight: 700 }}>
+//                 <p className="text-[#4A5A3C]" style={{ fontSize: '14px', fontWeight: 700 }}>
 //                   Filter by Category
 //                 </p>
 //               </div>
@@ -302,8 +302,8 @@
 //           {filteredMaterials.brochures.length > 0 && (
 //             <div>
 //               <div className="flex items-center gap-2 mb-4">
-//                 <BookOpen className="h-6 w-6 text-primary" />
-//                 <h3 className="text-primary" style={{ fontSize: '20px', fontWeight: 700 }}>
+//                 <BookOpen className="h-6 w-6 text-[#4A5A3C]" />
+//                 <h3 className="text-[#4A5A3C]" style={{ fontSize: '20px', fontWeight: 700 }}>
 //                   📘 Brochures
 //                 </h3>
 //               </div>
@@ -353,7 +353,7 @@
 //         {/* Footer Help Text */}
 //         <div className="text-center mt-12 p-4 bg-muted/20 rounded-lg">
 //           <p className="text-sm text-muted-foreground">
-//             Need help? Contact us at <a href="mailto:info@waterlinks.in" className="text-primary hover:underline">info@waterlinks.in</a>
+//             Need help? Contact us at <a href="mailto:info@waterlinks.in" className="text-[#4A5A3C] hover:underline">info@waterlinks.in</a>
 //           </p>
 //         </div>
 //       </div>
@@ -693,7 +693,7 @@ export function Downloads({ onBack }: DownloadsProps) {
         </div>
 
         <div className="mb-3">
-          <h4 className="text-primary mb-2" style={{ fontSize: "13px", fontWeight: 600 }}>
+          <h4 className="text-[#4A5A3C] mb-2" style={{ fontSize: "13px", fontWeight: 600 }}>
             {material.name}
           </h4>
           <div className="flex items-center gap-3 text-xs text-muted-foreground mb-2">
@@ -721,7 +721,7 @@ export function Downloads({ onBack }: DownloadsProps) {
         {onBack && (
           <button
             onClick={onBack}
-            className="flex items-center gap-2 text-primary hover:text-primary/80 transition-colors mb-6 group"
+            className="flex items-center gap-2 text-[#4A5A3C] hover:text-[#4A5A3C]/80 transition-colors mb-6 group"
           >
             <ArrowLeft className="h-5 w-5 group-hover:-translate-x-1 transition-transform" />
             <span style={{ fontSize: "16px", fontWeight: 600 }}>Back to Home</span>
@@ -731,8 +731,8 @@ export function Downloads({ onBack }: DownloadsProps) {
         {/* Header */}
         <div className="text-center mb-8">
           <div className="flex items-center justify-center gap-3 mb-3">
-            <Download className="h-10 w-10 text-primary" />
-            <h1 className="text-primary" style={{ fontSize: "32px", fontWeight: 700 }}>
+            <Download className="h-10 w-10 text-[#4A5A3C]" />
+            <h1 className="text-[#4A5A3C]" style={{ fontSize: "32px", fontWeight: 700 }}>
               Download Center
             </h1>
           </div>
@@ -772,7 +772,7 @@ export function Downloads({ onBack }: DownloadsProps) {
                     </g>
                   </svg>
                 </div>
-                <p className="text-primary" style={{ fontSize: "14px", fontWeight: 700 }}>
+                <p className="text-[#4A5A3C]" style={{ fontSize: "14px", fontWeight: 700 }}>
                   Filter by Category
                 </p>
               </div>
@@ -886,8 +886,8 @@ export function Downloads({ onBack }: DownloadsProps) {
           {filteredMaterials.brochures.length > 0 && (
             <div>
               <div className="flex items-center  gap-2 mb-4">
-                <BookOpen className="h-6 w-6 text-primary" />
-                <h3 className="text-primary" style={{ fontSize: "20px", fontWeight: 700 }}>
+                <BookOpen className="h-6 w-6 text-[#4A5A3C]" />
+                <h3 className="text-[#4A5A3C]" style={{ fontSize: "20px", fontWeight: 700 }}>
                   📘 Brochures
                 </h3>
               </div>
@@ -956,8 +956,8 @@ export function Downloads({ onBack }: DownloadsProps) {
         <div className="text-center mt-12 p-4 bg-muted/20 rounded-lg">
           <p className="text-sm text-muted-foreground">
             Need help? Contact us at{" "}
-            <a href="mailto:info@waterlinks.in" className="text-primary hover:underline">
-              info@waterlinks.in
+            <a href="mailto:info@AquaPhilic.in" className="text-[#4A5A3C] hover:underline">
+              info@AquaPhilic.in
             </a>
           </p>
         </div>
