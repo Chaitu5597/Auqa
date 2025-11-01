@@ -59,7 +59,7 @@ export function DownloadsDropdown({ isOpen, onClose }: DownloadsDropdownProps) {
     leaflets: [
       {
         id: 4,
-        name: "AQUA GREEN Information",
+        name: "Aqua Life Information",
         size: "850 KB",
         pages: 2,
         thumbnail: "https://images.unsplash.com/photo-1560264280-88b68371db39?w=400",
@@ -207,8 +207,8 @@ export function DownloadsDropdown({ isOpen, onClose }: DownloadsDropdownProps) {
                         key={category.id}
                         onClick={() => setSelectedCategory(category.id)}
                         className={`px-3 md:px-4 py-2 md:py-2.5 rounded-lg transition-all duration-300 flex items-center gap-1.5 border-2 ${selectedCategory === category.id
-                            ? "bg-primary text-white shadow-lg scale-105 border-primary"
-                            : "bg-white text-foreground hover:bg-primary/5 border-primary/30 hover:border-primary/60"
+                          ? "bg-primary text-white shadow-lg scale-105 border-primary"
+                          : "bg-white text-foreground hover:bg-primary/5 border-primary/30 hover:border-primary/60"
                           }`}
                         style={{ fontSize: '13px', fontWeight: 600 }}
                       >
@@ -233,8 +233,8 @@ export function DownloadsDropdown({ isOpen, onClose }: DownloadsDropdownProps) {
                         key={lang.code}
                         onClick={() => setSelectedLanguage(lang.code)}
                         className={`px-3 md:px-4 py-2 md:py-2.5 rounded-lg transition-all duration-300 border-2 ${selectedLanguage === lang.code
-                            ? "bg-secondary text-white shadow-lg scale-105 border-secondary"
-                            : "bg-white text-foreground hover:bg-secondary/5 border-secondary/30 hover:border-secondary/60"
+                          ? "bg-secondary text-white shadow-lg scale-105 border-secondary"
+                          : "bg-white text-foreground hover:bg-secondary/5 border-secondary/30 hover:border-secondary/60"
                           }`}
                         style={{ fontSize: '12px', fontWeight: 500 }}
                       >

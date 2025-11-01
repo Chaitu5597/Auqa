@@ -59,7 +59,7 @@
 //     leaflets: [
 //       {
 //         id: 4,
-//         name: "AQUA GREEN Information",
+//         name: "Aqua Life Information",
 //         size: "850 KB",
 //         pages: 2,
 //         thumbnail: "https://images.unsplash.com/photo-1560264280-88b68371db39?w=400",
@@ -421,7 +421,7 @@ export function Downloads({ onBack }: DownloadsProps) {
       },
       {
         id: 2,
-        name: "Impetus",
+        name: "Vikrant",
         size: "3.1 MB",
         pages: 32,
         thumbnail: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=400",
@@ -429,7 +429,7 @@ export function Downloads({ onBack }: DownloadsProps) {
       },
       {
         id: 3,
-        name: "Maricidin",
+        name: "Meik",
         size: "1.8 MB",
         pages: 16,
         thumbnail: "https://images.unsplash.com/photo-1554224311-beee4ece8c35?w=400",
@@ -437,7 +437,7 @@ export function Downloads({ onBack }: DownloadsProps) {
       },
       {
         id: 10,
-        name: "Sporex",
+        name: "meicl",
         size: "2.2 MB",
         pages: 20,
         thumbnail: "https://images.unsplash.com/photo-1565619801261-f21f0c6e0edf?w=400",
@@ -445,7 +445,7 @@ export function Downloads({ onBack }: DownloadsProps) {
       },
       {
         id: 11,
-        name: "VibroShield",
+        name: "SEAL",
         size: "2.8 MB",
         pages: 28,
         thumbnail: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400",
@@ -453,7 +453,7 @@ export function Downloads({ onBack }: DownloadsProps) {
       },
       {
         id: 12,
-        name: "Marinox",
+        name: "TRUBOON",
         size: "2.0 MB",
         pages: 18,
         thumbnail: "https://images.unsplash.com/photo-1590682680031-87708a088f54?w=400",
@@ -461,7 +461,7 @@ export function Downloads({ onBack }: DownloadsProps) {
       },
       {
         id: 13,
-        name: "EcoCyst",
+        name: "BIOMASS",
         size: "1.9 MB",
         pages: 14,
         thumbnail: "https://images.unsplash.com/photo-1562155955-1cb2d73488d7?w=400",
@@ -469,7 +469,7 @@ export function Downloads({ onBack }: DownloadsProps) {
       },
       {
         id: 14,
-        name: "CrustaMin Pro",
+        name: "ALLCIDA Pro",
         size: "2.4 MB",
         pages: 22,
         thumbnail: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=400",
@@ -495,7 +495,7 @@ export function Downloads({ onBack }: DownloadsProps) {
       },
       {
         id: 5,
-        name: "Impetus",
+        name: "Vikrant",
         size: "920 KB",
         pages: 2,
         thumbnail: "https://images.unsplash.com/photo-1589802829985-817e51171b92?w=400",
@@ -503,7 +503,7 @@ export function Downloads({ onBack }: DownloadsProps) {
       },
       {
         id: 6,
-        name: "Maricidin",
+        name: "Meik",
         size: "1.1 MB",
         pages: 4,
         thumbnail: "https://images.unsplash.com/photo-1576086213369-97a306d36557?w=400",
@@ -511,7 +511,7 @@ export function Downloads({ onBack }: DownloadsProps) {
       },
       {
         id: 10,
-        name: "Sporex",
+        name: "meicl",
         size: "2.2 MB",
         pages: 20,
         thumbnail: "https://images.unsplash.com/photo-1565619801261-f21f0c6e0edf?w=400",
@@ -519,7 +519,7 @@ export function Downloads({ onBack }: DownloadsProps) {
       },
       {
         id: 16,
-        name: "VibroShield",
+        name: "SEAL",
         size: "780 KB",
         pages: 2,
         thumbnail: "https://images.unsplash.com/photo-1583623025817-d180a2221d0a?w=400",
@@ -527,7 +527,7 @@ export function Downloads({ onBack }: DownloadsProps) {
       },
       {
         id: 17,
-        name: "MarinoX",
+        name: "TRUBOON",
         size: "890 KB",
         pages: 2,
         thumbnail: "https://images.unsplash.com/photo-1609087887663-c0ecf1d71c09?w=400",
@@ -553,7 +553,7 @@ export function Downloads({ onBack }: DownloadsProps) {
       },
       {
         id: 8,
-        name: "Impetus",
+        name: "Vikrant",
         size: "480 KB",
         pages: 1,
         thumbnail: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400",
@@ -561,7 +561,7 @@ export function Downloads({ onBack }: DownloadsProps) {
       },
       {
         id: 9,
-        name: "Maricidin",
+        name: "Meik",
         size: "320 KB",
         pages: 1,
         thumbnail: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=400",
@@ -569,7 +569,7 @@ export function Downloads({ onBack }: DownloadsProps) {
       },
       {
         id: 19,
-        name: "Sporex",
+        name: "meicl",
         size: "580 KB",
         pages: 1,
         thumbnail: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=400",
@@ -577,7 +577,7 @@ export function Downloads({ onBack }: DownloadsProps) {
       },
       {
         id: 20,
-        name: "VibroShield",
+        name: "SEAL",
         size: "520 KB",
         pages: 1,
         thumbnail: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=400",
@@ -585,7 +585,7 @@ export function Downloads({ onBack }: DownloadsProps) {
       },
       {
         id: 21,
-        name: "Marinox",
+        name: "TRUBOON",
         size: "420 KB",
         pages: 1,
         thumbnail: "https://images.unsplash.com/photo-1524661135-423995f22d0b?w=400",
@@ -664,9 +664,8 @@ export function Downloads({ onBack }: DownloadsProps) {
   const renderMaterialCard = (material: any) => (
     <Card
       key={material.id}
-      className={`hover:shadow-lg transition-all duration-300 border-2 border-muted/40 hover:border-primary/50 overflow-hidden ${
-        selectedCategory === "all" ? "shrink-0 w-[280px]" : ""
-      }`}
+      className={`hover:shadow-lg transition-all duration-300 border-2 border-muted/40 hover:border-primary/50 overflow-hidden ${selectedCategory === "all" ? "shrink-0 w-[280px]" : ""
+        }`}
     >
       <CardContent className="p-3">
         <div className="relative mb-3 rounded-lg overflow-hidden bg-gradient-to-br from-primary/10 to-secondary/10 group">
@@ -781,11 +780,10 @@ export function Downloads({ onBack }: DownloadsProps) {
                   <button
                     key={category.id}
                     onClick={() => setSelectedCategory(category.id)}
-                    className={`px-4 py-2 rounded-lg transition-all duration-300 flex items-center gap-2 border-2 ${
-                      selectedCategory === category.id
-                        ? "bg-primary text-white shadow-lg scale-105 border-primary"
-                        : "bg-white text-foreground hover:bg-primary/5 border-primary/30 hover:border-primary/60"
-                    }`}
+                    className={`px-4 py-2 rounded-lg transition-all duration-300 flex items-center gap-2 border-2 ${selectedCategory === category.id
+                      ? "bg-primary text-white shadow-lg scale-105 border-primary"
+                      : "bg-white text-foreground hover:bg-primary/5 border-primary/30 hover:border-primary/60"
+                      }`}
                     style={{ fontSize: "14px", fontWeight: 600 }}
                   >
                     <span>{category.icon}</span>
@@ -865,11 +863,10 @@ export function Downloads({ onBack }: DownloadsProps) {
                   <button
                     key={lang.code}
                     onClick={() => setSelectedLanguage(lang.code)}
-                    className={`px-4 py-2 rounded-lg transition-all duration-300 border-2 ${
-                      selectedLanguage === lang.code
-                        ? "bg-secondary text-white shadow-lg scale-105 border-secondary"
-                        : "bg-white text-foreground hover:bg-secondary/5 border-secondary/30 hover:border-secondary/60"
-                    }`}
+                    className={`px-4 py-2 rounded-lg transition-all duration-300 border-2 ${selectedLanguage === lang.code
+                      ? "bg-secondary text-white shadow-lg scale-105 border-secondary"
+                      : "bg-white text-foreground hover:bg-secondary/5 border-secondary/30 hover:border-secondary/60"
+                      }`}
                     style={{ fontSize: "13px", fontWeight: 500 }}
                   >
                     {lang.name}
@@ -894,7 +891,7 @@ export function Downloads({ onBack }: DownloadsProps) {
               {selectedCategory === "all" ? (
                 <div className="overflow-x-auto pb-4">
                   <div className="flex gap-4">
-                    {filteredMaterials.brochures.slice(0,6).map(renderMaterialCard)}
+                    {filteredMaterials.brochures.slice(0, 6).map(renderMaterialCard)}
                   </div>
                 </div>
               ) : (

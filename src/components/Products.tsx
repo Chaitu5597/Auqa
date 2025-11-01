@@ -2,6 +2,28 @@ import { useState } from "react";
 import { Card, CardContent } from "./ui/card";
 import { Button } from "./ui/button";
 import { ArrowLeft } from "lucide-react";
+import arualife from "../assets/aqualife.png"
+import vikranth from "../assets/vikranth.png"
+import meik from "../assets/meik.png"
+import meiclProductImage from "../assets/meicl.png";
+import seal from "../assets/seal.png";
+import TRUBOONProductImage from "../assets/turboon.png";
+import BIOMASSProductImage from "../assets/biomass.png";
+import ALLCIDAProductImage from "../assets/allcida.png";
+import ride from "../assets/ride.png";
+import thinkmin from "../assets/thinkmin.png";
+import meizn from "../assets/meizn.png";
+import ensure from "../assets/ensure.png";
+import liquipro from "../assets/liquipro.png";
+import algae from "../assets/algae.png";
+import neo from "../assets/neo.png";
+import proline from "../assets/proline.png";
+import invictus from "../assets/invictus.png";
+import Armour from "../assets/Armour.png";
+
+
+
+
 
 interface ProductsProps {
   onProductClick: (productId: string) => void;
@@ -13,7 +35,7 @@ export function Products({ onProductClick, onBack }: ProductsProps) {
 
   const categories = [
     { id: "all", name: "All Products" },
-    { id: "pond-management", name: "Pond Management" },
+    { id: "pond-management", name: "Bacillus megaterium" },
     { id: "probiotics", name: "Probiotics" },
     // { id: "disinfectant", name: "Disinfectant" },
     { id: "disease-control", name: "Disease Control" },
@@ -23,78 +45,161 @@ export function Products({ onProductClick, onBack }: ProductsProps) {
 
   const products = [
     {
-      id: "aqua-green",
-      name: "AQUA GREEN",
-      tagline: "Soil Organic Carbon Enhancer",
-      image: "https://i.postimg.cc/4dJ3zPq6/Aqua-Greenn.png",
+      id: "Aqua-Life",
+      name: "Aqua Life",
+      // tagline: "Advanced Solution for Water Quality and Pond Ecosystem Health",
+      image: arualife,
       isProductImage: true,
       category: "pond-management"
     },
     {
-      id: "impetus",
-      name: "IMPETUS",
-      tagline: "Granulated Aqua Probiotics",
-      image: "https://i.postimg.cc/8PjWxk5Y/Impetus.png",
+      id: "Vikrant",
+      name: "Vikrant",
+      // tagline: "Granulated Aqua Probiotics",
+      image: vikranth,
       isProductImage: true,
       category: "probiotics"
     },
     {
-      id: "maricidin",
-      name: "MARICIDIN",
-      tagline: "Nano Disinfectant ",
-      image: "https://i.postimg.cc/59n9Lwx1/Maricidin.png",
+      id: "Meik",
+      name: "Mei-k",
+      // tagline: "Nano Disinfectant ",
+      image: meik,
       isProductImage: true,
       category: "disease-control"
     },
 
     {
-      id: "sporex",
-      name: "SPOREX",
-      tagline: "EHP Control",
-      image: "https://i.postimg.cc/25wMM7cx/Sporex.png",
+      id: "meicl",
+      name: "meicl",
+      // tagline: "EHP Control",
+      image: meiclProductImage,
       isProductImage: true,
       category: "disease-control"
     },
     {
-      id: "vibroshield",
-      name: "VibroShield",
-      tagline: "Control Vibro Species",
-      image: "https://i.postimg.cc/Wbq1cMBR/Vibro-Shield.png",
+      id: "SEAL",
+      name: "SEAL",
+      tagline: "A Growth Zeal Liquid",
+      image: seal,
       isProductImage: true,
       category: "disease-control"
     },
     {
-      id: "marinox",
-      name: "MarinoX",
-      tagline: "Feed Supplement",
-      image: "https://i.postimg.cc/Y9zHMmrj/Marinox.png",
+      id: "TRUBOON",
+      name: "TRUBOON",
+      tagline: "Shrimp Protector Farmer Benefiter",
+      image: TRUBOONProductImage,
       isProductImage: true,
       category: "feed-suppliment"
     },
     {
-      id: "ecocyst",
-      name: "EcoCyst",
-      tagline: "Microcystis Control",
-      image: "https://i.postimg.cc/nz7yT99V/Ecocyst.png",
+      id: "BIOMASS",
+      name: "BIOMASS",
+      tagline: "PRODUCTIVITY · SUSTAINABILITY · PROFITABILITY",
+      image: BIOMASSProductImage,
       isProductImage: true,
       category: "algae-control"
     },
     {
-      id: "crustamin",
-      name: "CrustaMin Pro",
-      tagline: "Feed Supplement",
-      image: "https://i.postimg.cc/cJKCxh2Q/Crusta-MIN-Pro.png",
+      id: "ALLCIDA",
+      name: "ALLCIDA Pro",
+      tagline: "Shrimp Protector Farmer Benefiter",
+      image: ALLCIDAProductImage,
       isProductImage: true,
       category: "feed-suppliment"
     },
+    // {
+    //   id: "detoxify-x",
+    //   name: "Detoxify-X",
+    //   tagline: "Pond Bottom Management",
+    //   image: "https://i.postimg.cc/mgCpvW2Y/Detoxify.png",
+    //   isProductImage: true,
+    //   category: "pond-management"
+    // },
     {
-      id: "detoxify-x",
-      name: "Detoxify-X",
-      tagline: "Pond Bottom Management",
-      image: "https://i.postimg.cc/mgCpvW2Y/Detoxify.png",
-      isProductImage: true,
-      category: "pond-management"
-    },
+  id: "ride",
+  name: "RIDE",
+  tagline: "For Red Disease & Columnaris",
+  image: ride,
+  isProductImage: true,
+  category: "feed-suppliment",
+},
+{
+  id: "thinkmin",
+  name: "Thinkmin",
+  tagline: "Liquid Micro Sized Minerals",
+  image: thinkmin,
+  isProductImage: true,
+  category: "feed-suppliment",
+},
+{
+  id: "meizn",
+  name: "MeiZn",
+  tagline: "For Shrimp Growth & Immunity",
+  image: meizn,
+  category: "feed-suppliment"
+},
+{
+  id: "ensure",
+  name: "Ensure",
+  tagline: "A Shrimp Sure Liquid (EHP Control)",
+  image: ensure,
+  isProductImage: true,
+  category: "feed-suppliment"
+},
+{
+  id: "liquipro",
+  name: "Liquipro",
+  tagline: "Liquid Probiotic",
+  image: liquipro,
+  isProductImage: true,
+  category: "feed-suppliment"
+},
+{
+  id: "algaedefender",
+  name: "Algae Defender",
+  tagline: "Botanical Algae Control Solution",
+  image: algae,
+  isProductImage: true,
+  category: "feed-suppliment"
+},
+{
+  id: "neo",
+  name: "Neo",
+  tagline: "Plant-Based Solution for WSSV Management",
+  image: neo,
+  isProductImage: true,
+  category: "feed-suppliment",
+},
+{
+  id: "proline",
+  name: "Proline",
+  tagline: "Gut Probiotic for Enhanced Digestive Health & Feed Efficiency",
+  image: proline,
+  category: "feed-suppliment",
+  isProductImage: true,
+},
+{
+  id: "invictus",
+  name: "Invictus",
+  tagline: "For Vibriosis",
+  image: invictus,
+  category: "feed-suppliment",
+  isProductImage: true,
+},
+{
+  id: "armour",
+  name: "Armour",
+  tagline: "For White Gut Diseases",
+  image: Armour,
+  isProductImage: true,
+  category: "feed-suppliment",
+},
+
+
+
+
   ];
 
   const filteredProducts = selectedCategory === "all"
